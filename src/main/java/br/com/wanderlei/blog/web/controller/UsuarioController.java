@@ -1,12 +1,15 @@
 package br.com.wanderlei.blog.web.controller;
 
 import br.com.wanderlei.blog.entity.Avatar;
+import br.com.wanderlei.blog.entity.Perfil;
 import br.com.wanderlei.blog.entity.Usuario;
 import br.com.wanderlei.blog.service.AvatarService;
 import br.com.wanderlei.blog.service.UsuarioService;
+import br.com.wanderlei.blog.web.editor.PerfilEditorSupport;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
+import org.springframework.web.bind.WebDataBinder;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.multipart.MultipartFile;
 import org.springframework.web.servlet.ModelAndView;
@@ -24,6 +27,11 @@ public class UsuarioController {
     private UsuarioService usuarioService;
     @Autowired
     private AvatarService avatarService;
+
+    @InitBinder
+    public void initBinder(WebDataBinder dataBinder){
+        dataBinder.registerCustomEditor(Perfil.class, new PerfilEditorSupport());
+    }
 
     @RequestMapping(value = "list", method = RequestMethod.GET)
     public ModelAndView listUsuario(ModelMap modelMap){
