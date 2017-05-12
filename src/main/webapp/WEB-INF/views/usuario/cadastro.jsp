@@ -9,36 +9,7 @@
 <html>
 <head>
     <title>Usuário</title>
-    <style type="text/css">
-
-        .campo{
-            margin-bottom: 1em;
-        }
-
-        .campo input:FOCUS, .campo select:FOCUS {
-            background: blanchedalmond;
-        }
-
-        .table {
-            width: 640px;
-            text-align: center;
-        }
-
-        fieldset{
-            width: 640px;
-            margin: 0 auto;
-        }
-
-        fieldset.group .campo {
-            float: left;
-            margin-right: 2em;
-        }
-
-        .master {
-            width: 960px;
-            margin: 0 auto;
-        }
-    </style>
+    <link type="text/css" rel="stylesheet" href="<c:url value="/css/style.css"/>">
 </head>
 <body>
     <c:url var="save" value="/usuario/save"/>
