@@ -12,7 +12,9 @@
     <link type="text/css" rel="stylesheet" href="<c:url value="/css/style.css"/>">
 </head>
 <body>
+
     <fieldset>
+
         <legend>Perfil</legend>
         <table class="table">
             <tr>
@@ -33,6 +35,8 @@
                 </td>
             </tr>
         </table>
+
     </fieldset>
+
 </body>
 </html>

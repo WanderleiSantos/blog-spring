@@ -17,27 +17,23 @@
         <form:hidden path="id"/>
         <fieldset>
             <legend>Cadastro de Usuário</legend>
-            <div>
+            <div class="campo">
                 <form:label path="nome">Nome</form:label><br>
                 <form:input path="nome" type="text" requerid="true"/>
             </div>
-            <br>
-            <div>
+            <div class="campo">
                 <form:label path="email">E-mail</form:label><br>
                 <form:input path="email" type="email" requerid="true"/>
             </div>
-            <br>
-            <div>
+            <div class="campo">
                 <form:label path="senha">Senha</form:label><br>
                 <form:password path="senha" requerid="true"/>
             </div>
-            <br>
-            <div>
+            <div class="campo">
                 <label for="file">Avatar</label><br>
                 <input name="file" type="file" requerid="true"/>
             </div>
-            <br>
-            <div>
+            <div class="campo">
                 <form:label path="perfil">Perfil</form:label><br>
                 <form:select path="perfil" requerid="true">
                     <form:option value="ADMIN" label="ADMIN"/>
@@ -45,7 +41,6 @@
                     <form:option value="LEITOR" label="LEITOR"/>
                 </form:select>
             </div>
-            <br>
             <div>
                 <input type="submit" value="Salvar">
                 <input type="reset" value="Limpar">
