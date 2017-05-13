@@ -54,4 +54,14 @@ public class UsuarioService {
     public List<Usuario> findAll(){
         return repository.findAll();
     }
+
+    @Transactional(readOnly = false)
+    public void updateNomeAndEmail(Usuario usuario) {
+        repository.updateNomeAndEmail(usuario.getNome(), usuario.getEmail(), usuario.getId());
+    }
+
+    @Transactional(readOnly = false)
+    public void updateSenha(Usuario usuario) {
+        repository.updateSenha(usuario.getSenha(), usuario.getId());
+    }
 }
