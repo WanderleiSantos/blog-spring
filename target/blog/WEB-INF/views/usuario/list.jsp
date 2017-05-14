@@ -12,12 +12,14 @@
     <link type="text/css" rel="stylesheet" href="<c:url value="/css/style.css"/>">
 </head>
 <body>
-
+    <c:import url="../menu.jsp"/>
+    <br>
     <fieldset>
 
         <legend>Usuários</legend>
         <table class="table">
             <tr>
+                <th>Avatar</th>
                 <th>Nome</th>
                 <th>E-mail</th>
                 <th>Data Cadastro</th>
@@ -26,6 +28,11 @@
             </tr>
             <c:forEach var="usuario" items="${ usuarios }" varStatus="i">
             <tr bgcolor='${i.count % 2 != 0 ? '#f1f1f1' : 'white'}'>
+                <td>
+                    <a href="<c:url value="/avatar/update/${usuario.avatar.id}"/>" title="Alterar imagem">
+                        <img src="<c:url value="/avatar/load/${usuario.avatar.id}"/>" style="width:25px; height: 25px"/>
+                    </a>
+                </td>
                 <td>${usuario.nome}</td>
                 <td>${usuario.email}</td>
                 <td>${usuario.dataCadastro}</td>
