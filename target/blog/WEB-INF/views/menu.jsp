@@ -12,4 +12,9 @@
         <a href="<c:url value="/usuario/add"/>">Add Usuario</a>
         <a href="<c:url value="/usuario/list"/>">Listar Usuarios</a>
     </nav>
+
+    <nav>
+        <a href="<c:url value="/autor/add"/>">Add Autor</a>
+        <a href="<c:url value="/autor/list"/>">Listar Autores</a>
+    </nav>
 </fieldset>

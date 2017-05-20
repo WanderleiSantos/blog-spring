@@ -20,8 +20,14 @@ public class AutorService {
     @Autowired
     private AutorRepository repository;
 
+    @Transactional(readOnly = false)
     public void save(Autor autor){
-        repository.save(autor);
+        if (autor.getId() == null) {
+            repository.save(autor);
+        } else{
+            repository.updateNameAndBiografia(autor.getNome(), autor.getBiografia(), autor.getId());
+        }
+
     }
 
     public List<Autor> findAll(){
@@ -36,5 +42,8 @@ public class AutorService {
         return repository.findOne(id);
     }
 
-
+    @Transactional(readOnly = false)
+    public void delete(Long id) {
+        repository.delete(id);
+    }
 }
