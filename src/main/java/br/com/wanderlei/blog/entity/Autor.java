@@ -3,6 +3,7 @@ package br.com.wanderlei.blog.entity;
 import org.springframework.data.jpa.domain.AbstractPersistable;
 
 import javax.persistence.*;
+import java.util.List;
 
 /**
  * Created by wanderlei on 18/05/17.
@@ -20,6 +21,9 @@ public class Autor extends AbstractPersistable<Long> {
     @OneToOne
     @JoinColumn(name = "usuario_id")
     private Usuario usuario;
+
+    @OneToMany(mappedBy = "autor")
+    private List<Postagem> postagems;
 
     @Override
     public void setId(Long id) {
@@ -48,5 +52,13 @@ public class Autor extends AbstractPersistable<Long> {
 
     public void setUsuario(Usuario usuario) {
         this.usuario = usuario;
+    }
+
+    public List<Postagem> getPostagems() {
+        return postagems;
+    }
+
+    public void setPostagems(List<Postagem> postagems) {
+        this.postagems = postagems;
     }
 }
