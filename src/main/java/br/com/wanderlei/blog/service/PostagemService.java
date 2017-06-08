@@ -44,17 +44,32 @@ public class PostagemService {
     }
 
     private void update(Postagem postagem){
+        Postagem persistente = repository.findOne(postagem.getId());
 
+        if(!persistente.getTitulo().equals(postagem.getTitulo())){
+            persistente.setTitulo(postagem.getTitulo());
+        }
+
+        if(!persistente.getTexto().equals(postagem.getTexto())){
+            persistente.setTexto(postagem.getTexto());
+        }
+
+        repository.save(persistente);
     }
 
     private void save (Postagem postagem){
 
-        String permalink = MyReplaceString.formatarPermalink(postagem.getPermalink());
+        String permalink = MyReplaceString.formatarPermalink(postagem.getTitulo());
         postagem.setPermalink(permalink);
 
         Calendar cal = Calendar.getInstance();
         postagem.setDataPostagem(cal.getTime());
 
         repository.save(postagem);
+    }
+
+    @Transactional(readOnly = false)
+    public void delete(Long id) {
+        repository.delete(id);
     }
 }

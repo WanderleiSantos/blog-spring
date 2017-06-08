@@ -13,7 +13,7 @@ import java.util.Date;
 public class Postagem extends AbstractPersistable<Long> {
 
     @Column(nullable = false, unique = true, length = 60)
-    private Long titulo;
+    private String titulo;
 
     @Column(nullable = false, columnDefinition = "LONGTEXT")
     private String texto;
@@ -33,11 +33,11 @@ public class Postagem extends AbstractPersistable<Long> {
         super.setId(id);
     }
 
-    public Long getTitulo() {
+    public String getTitulo() {
         return titulo;
     }
 
-    public void setTitulo(Long titulo) {
+    public void setTitulo(String titulo) {
         this.titulo = titulo;
     }
 
