@@ -30,7 +30,7 @@ public class SpringDataConfig {
     private Environment environment;
 
     @Bean
-    public PlatformTransactionManager platformTransactionManager(EntityManagerFactory factory){
+    public PlatformTransactionManager transactionManager(EntityManagerFactory factory){
         JpaTransactionManager manager = new JpaTransactionManager();
         manager.setEntityManagerFactory(factory);
         manager.setJpaDialect(new HibernateJpaDialect());
@@ -42,6 +42,7 @@ public class SpringDataConfig {
         HibernateJpaVendorAdapter adapter = new HibernateJpaVendorAdapter();
         adapter.setShowSql(environment.getProperty("hibernate.show.sql", Boolean.class));
         adapter.setGenerateDdl(environment.getProperty("hibernate.ddl", Boolean.class));
+        adapter.setDatabasePlatform("org.hibernate.dialect.MySQL5Dialect");
         return adapter;
     }
 
