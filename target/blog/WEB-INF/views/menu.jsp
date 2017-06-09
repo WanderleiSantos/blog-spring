@@ -9,6 +9,9 @@
 <fieldset style="font-family: monospace; font-size: 10px">
     <legend>Menu</legend>
     <nav>
+        <a href="<c:url value="/"/> ">HOME</a>
+    </nav>
+    <nav>
         <a href="<c:url value="/usuario/add"/>">Add Usuario</a>
         <a href="<c:url value="/usuario/list"/>">Listar Usuarios</a>
     </nav>

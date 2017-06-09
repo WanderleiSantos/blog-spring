@@ -20,8 +20,6 @@ public class CategoriaService {
     @Autowired
     private CategoriaRepository repository;
 
-
-
     public List<Categoria> findAll(){
         return repository.findAll();
     }
