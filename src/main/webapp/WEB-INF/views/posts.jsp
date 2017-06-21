@@ -18,7 +18,9 @@
                 <div>
                     <h2> <a href="<c:url value="/${p.permalink}"/>" title="${p.titulo}"> ${p.titulo} </a></h2>
                     <p>Autor: <a href="<c:url value="/autor/${p.autor.nome}"/>"> ${p.autor.nome} </a> |
-                        Data: <fmt:formatDate value="${p.dataPostagem}" type="both"/> </p>
+                       Data: <fmt:formatDate value="${p.dataPostagem}" type="both"/>
+                       # ${fn:length(p.comentarios)}
+                    </p>
                 </div>
                 <div>
                     <p>

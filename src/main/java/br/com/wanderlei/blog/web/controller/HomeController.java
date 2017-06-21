@@ -1,10 +1,12 @@
 package br.com.wanderlei.blog.web.controller;
 
+import br.com.wanderlei.blog.entity.Comentario;
 import br.com.wanderlei.blog.entity.Postagem;
 import br.com.wanderlei.blog.service.PostagemService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
+import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestMethod;
@@ -22,7 +24,7 @@ public class HomeController {
     private PostagemService postagemService;
 
     @RequestMapping(value = "/{permalink}", method = RequestMethod.GET)
-    public ModelAndView openPostagem(@PathVariable("permalink") String permalink, ModelMap model){
+    public ModelAndView openPostagem(@ModelAttribute("comentario") Comentario comentario, @PathVariable("permalink") String permalink, ModelMap model){
         Postagem postagem = postagemService.findByPermalink(permalink);
         model.addAttribute("postagem", postagem);
         return new ModelAndView("post", model);

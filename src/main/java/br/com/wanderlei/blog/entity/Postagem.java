@@ -3,6 +3,8 @@ package br.com.wanderlei.blog.entity;
 import org.springframework.data.jpa.domain.AbstractPersistable;
 
 import javax.persistence.*;
+import java.util.Collection;
+import java.util.Collections;
 import java.util.Date;
 import java.util.List;
 
@@ -36,6 +38,9 @@ public class Postagem extends AbstractPersistable<Long> {
             inverseJoinColumns = @JoinColumn(name = "categoria_id")
     )
     private List<Categoria> categorias;
+
+    @OneToMany(mappedBy = "postagem", fetch = FetchType.EAGER)
+    private List<Comentario> comentarios;
 
     @Override
     public void setId(Long id) {
@@ -88,5 +93,14 @@ public class Postagem extends AbstractPersistable<Long> {
 
     public void setCategorias(List<Categoria> categorias) {
         this.categorias = categorias;
+    }
+
+    public List<Comentario> getComentarios() {
+        Collections.sort(comentarios);
+        return comentarios;
+    }
+
+    public void setComentarios(List<Comentario> comentarios) {
+        this.comentarios = comentarios;
     }
 }

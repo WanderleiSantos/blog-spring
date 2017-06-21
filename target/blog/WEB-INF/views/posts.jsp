@@ -1,10 +1,3 @@
-<%--
-  Created by IntelliJ IDEA.
-  User: wanderlei
-  Date: 09/06/17
-  Time: 10:58
-  To change this template use File | Settings | File Templates.
---%>
 <%@ page contentType="text/html;charset=UTF-8" language="java" %>
 <html>
 <head>
@@ -25,7 +18,9 @@
                 <div>
                     <h2> <a href="<c:url value="/${p.permalink}"/>" title="${p.titulo}"> ${p.titulo} </a></h2>
                     <p>Autor: <a href="<c:url value="/autor/${p.autor.nome}"/>"> ${p.autor.nome} </a> |
-                        Data: <fmt:formatDate value="${p.dataPostagem}" type="both"/> </p>
+                       Data: <fmt:formatDate value="${p.dataPostagem}" type="both"/>
+                       # ${fn:length(p.comentarios)}
+                    </p>
                 </div>
                 <div>
                     <p>
