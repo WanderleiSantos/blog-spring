@@ -1,3 +1,6 @@
+a:link{
+    text-decoration: none;
+}
 
 .campo{
     margin-bottom: 1em;
@@ -25,4 +28,49 @@ fieldset.group .campo {
 .master {
     width: 960px;
     margin: 0 auto;
+}
+
+.header{
+    text-align: center;
+    font-family: monospace;
+}
+
+.post-autor{
+    border: 2px solid #eeeeee;
+    position: relative;
+    padding: 10px 10px 10px 10px;
+    color: #d1d1d1;
+    font-family: sans-serif;
+    text-align: justify;
+}
+
+.post-avatar{
+    float: left;
+    margin: 0 10px 0 0;
+    width: 64px;
+    height: auto;
+    position: relative;
+}
+
+#comentarios{
+    margin-top: 15px;
+}
+
+.comentarios{
+    background: #f1f1f1;
+    margin-bottom: 10px;
+    padding: 10px;
+    font-family: monospace;
+}
+
+.comentarios p{
+    font-family: cursive;
+}
+
+.comentarios-avatar{
+    float: left;
+    margin: 0 10px 0 0;
+    width: 64px;
+    height: auto;
+    position: relative;
 }

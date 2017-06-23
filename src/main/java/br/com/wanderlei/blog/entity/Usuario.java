@@ -4,6 +4,7 @@ import org.springframework.data.jpa.domain.AbstractPersistable;
 
 import javax.persistence.*;
 import java.util.Date;
+import java.util.List;
 
 /**
  * Created by wanderlei on 07/05/17.
@@ -32,6 +33,8 @@ public class Usuario extends AbstractPersistable<Long> {
     @JoinColumn(name = "avatar_id")
     private Avatar avatar;
 
+    @OneToMany(mappedBy = "usuario")
+    private List<Comentario> comentarios;
 
     @Override
     public void setId(Long id) {
@@ -84,5 +87,13 @@ public class Usuario extends AbstractPersistable<Long> {
 
     public void setAvatar(Avatar avatar) {
         this.avatar = avatar;
+    }
+
+    public List<Comentario> getComentarios() {
+        return comentarios;
+    }
+
+    public void setComentarios(List<Comentario> comentarios) {
+        this.comentarios = comentarios;
     }
 }

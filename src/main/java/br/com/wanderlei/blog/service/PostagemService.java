@@ -21,6 +21,9 @@ public class PostagemService {
     @Autowired
     private PostagemRepository repository;
 
+    public List<Postagem> findByCategoria(String link){
+        return repository.findByCategoriasPermalink(link);
+    }
 
     public List<Postagem> findAll(){
         return repository.findAll();
@@ -54,6 +57,10 @@ public class PostagemService {
             persistente.setTexto(postagem.getTexto());
         }
 
+        if(persistente.getCategorias() != postagem.getCategorias()){
+            persistente.setCategorias(postagem.getCategorias());
+        }
+
         repository.save(persistente);
     }
 
@@ -71,5 +78,9 @@ public class PostagemService {
     @Transactional(readOnly = false)
     public void delete(Long id) {
         repository.delete(id);
+    }
+
+    public List<Postagem> findByAutor(String nome) {
+        return repository.findByAutorNome(nome);
     }
 }
