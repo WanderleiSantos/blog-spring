@@ -4,6 +4,9 @@ import br.com.wanderlei.blog.entity.Categoria;
 import br.com.wanderlei.blog.repository.CategoriaRepository;
 import br.com.wanderlei.blog.util.MyReplaceString;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
@@ -42,5 +45,10 @@ public class CategoriaService {
         String permalink = MyReplaceString.formatarPermalink(categoria.getDescricao());
         categoria.setPermalink(permalink);
         repository.save(categoria);
+    }
+
+    public Page<Categoria> findByPagination(int page, int size){
+        Pageable pageable = new PageRequest(page, size);
+        return repository.findAllByOrderByDescricaoAsc(pageable);
     }
 }
