@@ -20,7 +20,7 @@
             <th>Categorias</th>
             <th>Ação</th>
         </tr>
-        <c:forEach var="postagem" items="${ postagens }" varStatus="i">
+        <c:forEach var="postagem" items="${ page.content }" varStatus="i">
             <tr bgcolor='${i.count % 2 != 0 ? '#f1f1f1' : 'white'}'>
                 <td>${postagem.id}</td>
                 <td>${postagem.titulo}</td>
@@ -41,7 +41,7 @@
             </tr>
         </c:forEach>
     </table>
-
+    <c:import url="../paginacao.jsp"/>
 </fieldset>
 
 </body>

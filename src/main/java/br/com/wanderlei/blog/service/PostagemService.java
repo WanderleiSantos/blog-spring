@@ -4,6 +4,9 @@ import br.com.wanderlei.blog.entity.Postagem;
 import br.com.wanderlei.blog.repository.PostagemRepository;
 import br.com.wanderlei.blog.util.MyReplaceString;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
@@ -20,6 +23,33 @@ public class PostagemService {
 
     @Autowired
     private PostagemRepository repository;
+
+    public Page<Postagem> findByTexto(int page, int size, String texto) {
+
+        return repository
+                .findByTextoContainingIgnoreCaseOrderByDataPostagemDesc(
+                        texto,
+                        new PageRequest(page, size)
+                );
+    }
+
+    public Page<Postagem> findByPaginationByAutor(int page, int size, Long id) {
+        Pageable pageable = new PageRequest(page, size);
+        return repository
+                .findAllByAutorIdOrderByDataPostagemDesc(pageable, id);
+    }
+
+    public Page<Postagem> findByPaginationByCategoria(int page, int size, String permalink) {
+        Pageable pageable = new PageRequest(page, size);
+        return repository
+                .findAllByCategoriasPermalinkOrderByDataPostagemDesc(pageable, permalink);
+    }
+
+    public Page<Postagem> findByPagination(int page, int size) {
+
+        Pageable pageable = new PageRequest(page, size);
+        return repository.findAllByOrderByDataPostagemDesc(pageable);
+    }
 
     public List<Postagem> findByCategoria(String link){
         return repository.findByCategoriasPermalink(link);

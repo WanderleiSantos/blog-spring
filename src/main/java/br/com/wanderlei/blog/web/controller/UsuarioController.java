@@ -7,6 +7,7 @@ import br.com.wanderlei.blog.service.AvatarService;
 import br.com.wanderlei.blog.service.UsuarioService;
 import br.com.wanderlei.blog.web.editor.PerfilEditorSupport;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.WebDataBinder;
@@ -69,8 +70,10 @@ public class UsuarioController {
 
     @RequestMapping(value = "list", method = RequestMethod.GET)
     public ModelAndView listUsuario(ModelMap modelMap){
-        List<Usuario> usuarios = usuarioService.findAll();
-        modelMap.addAttribute("usuarios", usuarios);
+
+        Page<Usuario> page = usuarioService.findByPagination(0, 3);
+        modelMap.addAttribute("page", page);
+        modelMap.addAttribute("urlPagination", "/usuario/page");
 
         return new ModelAndView("usuario/list",modelMap);
     }
@@ -95,6 +98,29 @@ public class UsuarioController {
     @RequestMapping(value = "/add", method = RequestMethod.GET)
     public ModelAndView showForm(@ModelAttribute("usuario")Usuario usuario){
         return new ModelAndView("usuario/cadastro");
+    }
+
+    @RequestMapping(value = "/page/{page}", method = RequestMethod.GET)
+    public ModelAndView pageUsuarios(@PathVariable("page") Integer pagina){
+        ModelAndView view = new ModelAndView("usuario/list");
+        Page<Usuario> page = usuarioService.findByPagination(pagina -1 , 3);
+        view.addObject("page", page);
+        view.addObject("urlPagination", "/usuario/page");
+        return view;
+    }
+
+    @RequestMapping(value = "sort/{order}/{field}/page/{page}", method = RequestMethod.GET)
+    public ModelAndView pageUsuario(@PathVariable("page") Integer pagina,
+                                    @PathVariable("order") String order,
+                                    @PathVariable("field") String field){
+
+        ModelAndView view = new ModelAndView("/usuario/list");
+        Page<Usuario> page = usuarioService.findByPaginationOrderByField(pagina -1, 3, field, order);
+
+        view.addObject("page", page);
+        view.addObject("urlPagination", "/usuario/sort/" + order +"/"+field+"/page");
+
+        return view;
     }
 
 }

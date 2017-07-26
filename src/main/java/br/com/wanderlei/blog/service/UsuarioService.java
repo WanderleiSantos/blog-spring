@@ -4,6 +4,10 @@ import br.com.wanderlei.blog.entity.Avatar;
 import br.com.wanderlei.blog.entity.Usuario;
 import br.com.wanderlei.blog.repository.UsuarioRepository;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.PageRequest;
+import org.springframework.data.domain.Pageable;
+import org.springframework.data.domain.Sort;
 import org.springframework.security.crypto.bcrypt.BCryptPasswordEncoder;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Propagation;
@@ -65,5 +69,15 @@ public class UsuarioService {
         String hash = new BCryptPasswordEncoder().encode(usuario.getSenha());
         usuario.setSenha(hash);
         repository.updateSenha(usuario.getSenha(), usuario.getId());
+    }
+
+    public Page<Usuario> findByPagination(int page, int size){
+        Pageable pageable = new PageRequest(page, size);
+        return repository.findAllByOrderByNomeAsc(pageable);
+    }
+
+    public Page<Usuario> findByPaginationOrderByField(int page, int size, String field, String order){
+        Sort sort = new Sort(new Sort.Order(Sort.Direction.fromString(order), field));
+        return repository.findAll(new PageRequest(page, size, sort));
     }
 }
