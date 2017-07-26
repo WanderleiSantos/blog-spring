@@ -3,6 +3,7 @@ package br.com.wanderlei.blog.web.controller;
 import br.com.wanderlei.blog.entity.Autor;
 import br.com.wanderlei.blog.service.AutorService;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -48,8 +49,8 @@ public class AutorController {
             Autor autor = autorService.findById(id.get());
             view.addObject("autores", Arrays.asList(autor));
         } else {
-            List<Autor> autorList = autorService.findAll();
-            view.addObject("autores", autorList);
+            Page<Autor> page = autorService.findByPagination(0, 3);
+            view.addObject("page", page);
         }
 
         return view;
@@ -64,5 +65,13 @@ public class AutorController {
     @RequestMapping(value = "/add", method = RequestMethod.GET)
     public ModelAndView addAutor(@ModelAttribute("autor") Autor autor){
         return new ModelAndView("autor/cadastro");
+    }
+
+    @RequestMapping(value = "/page/{page}", method = RequestMethod.GET)
+    public ModelAndView pageAutores(@PathVariable("page") Integer pagina){
+        ModelAndView view = new ModelAndView("autor/perfil");
+        Page<Autor> page = autorService.findByPagination(pagina - 1, 3);
+        view.addObject("page", page);
+        return view;
     }
 }

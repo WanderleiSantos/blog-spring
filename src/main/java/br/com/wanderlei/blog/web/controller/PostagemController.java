@@ -6,6 +6,7 @@ import br.com.wanderlei.blog.service.PostagemService;
 import br.com.wanderlei.blog.web.editor.CategoriaEditorSupport;
 import javafx.geometry.Pos;
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.data.domain.Page;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
 import org.springframework.web.bind.WebDataBinder;
@@ -31,6 +32,17 @@ public class PostagemController {
         binder.registerCustomEditor(List.class, new CategoriaEditorSupport(List.class, categoriaService));
     }
 
+    @RequestMapping(value = "/page/{page}", method = RequestMethod.GET)
+    public ModelAndView pagePostagens(@PathVariable("page") Integer pagina) {
+        ModelAndView view = new ModelAndView("postagem/list");
+
+        Page<Postagem> page = postagemService.findByPagination(pagina - 1, 5);
+
+        view.addObject("page", page);
+        view.addObject("urlPagination", "/postagem/page");
+
+        return view;
+    }
 
     @RequestMapping(value = "/update/{id}", method = RequestMethod.GET)
     public ModelAndView preUpdate(@PathVariable("id") Long id, ModelMap modelMap){
@@ -48,7 +60,12 @@ public class PostagemController {
 
     @RequestMapping(value = "/list", method = RequestMethod.GET)
     public ModelAndView listPostagem(ModelMap modelMap){
-        modelMap.addAttribute("postagens", postagemService.findAll());
+
+        Page<Postagem> page = postagemService.findByPagination(0, 5);
+
+        modelMap.addAttribute("page", page);
+        modelMap.addAttribute("urlPagination", "/postagem/page");
+
         return new ModelAndView("postagem/list", modelMap);
     }
 
