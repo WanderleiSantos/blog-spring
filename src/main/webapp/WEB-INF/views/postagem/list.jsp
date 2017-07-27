@@ -3,6 +3,8 @@
 <head>
     <title>Postagens</title>
     <link type="text/css" rel="stylesheet" href="<c:url value="/css/style.css"/>">
+    <script type="text/javascript" src="<c:url value="/js/jquery-3.2.1.min.js"/>"></script>
+    <script type="text/javascript" src="<c:url value="/js/postagem.js"/>"></script>
 </head>
 <body>
 <c:import url="../menu.jsp"/>
@@ -20,28 +22,27 @@
             <th>Categorias</th>
             <th>Ação</th>
         </tr>
-        <c:forEach var="postagem" items="${ page.content }" varStatus="i">
-            <tr bgcolor='${i.count % 2 != 0 ? '#f1f1f1' : 'white'}'>
-                <td>${postagem.id}</td>
-                <td>${postagem.titulo}</td>
-                <td>${postagem.permalink}</td>
-                <td>${postagem.dataPostagem}</td>
-                <td>${postagem.autor.nome}</td>
-                <td>
-                    <c:forEach var="c" items="${postagem.categorias}">
-                        [ ${c.descricao} ]
-                    </c:forEach>
-                </td>
-                <td>
-                    <c:url var="update" value="/postagem/update/${postagem.id}"/>
-                    <a href="${update}" title="Editar">&#9445</a>
-                    <c:url var="delete" value="/postagem/delete/${postagem.id}"/>
-                    <a href="${delete}" title="Excluir">&#9447</a>
-                </td>
-            </tr>
-        </c:forEach>
+        <tbody id="tbody">
+            <jsp:include page="table-rows.jsp"/>
+        </tbody>
     </table>
-    <c:import url="../paginacao.jsp"/>
+    <div align="center">
+    <c:forEach var="p" begin="1" end="${page.totalPages}">
+        <c:choose>
+            <c:when test="${ (p - 1) eq page.number }">
+                <button id="button_${p}" value="${p}" disabled="disabled">${p}</button>
+            </c:when>
+            <c:otherwise>
+                <button id="button_${p}" value="${p}">${p}</button>
+            </c:otherwise>
+        </c:choose>
+    </c:forEach>
+    </div>
+
+    <div id="info">
+
+    </div>
+
 </fieldset>
 
 </body>

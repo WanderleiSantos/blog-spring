@@ -32,14 +32,12 @@ public class PostagemController {
         binder.registerCustomEditor(List.class, new CategoriaEditorSupport(List.class, categoriaService));
     }
 
-    @RequestMapping(value = "/page/{page}", method = RequestMethod.GET)
+    @RequestMapping(value = "/ajax/page/{page}", method = RequestMethod.GET)
     public ModelAndView pagePostagens(@PathVariable("page") Integer pagina) {
-        ModelAndView view = new ModelAndView("postagem/list");
 
-        Page<Postagem> page = postagemService.findByPagination(pagina - 1, 5);
-
+        ModelAndView view = new ModelAndView("postagem/table-rows");
+        Page<Postagem> page = postagemService.findByPagination(pagina - 1, 3);
         view.addObject("page", page);
-        view.addObject("urlPagination", "/postagem/page");
 
         return view;
     }
@@ -61,10 +59,10 @@ public class PostagemController {
     @RequestMapping(value = "/list", method = RequestMethod.GET)
     public ModelAndView listPostagem(ModelMap modelMap){
 
-        Page<Postagem> page = postagemService.findByPagination(0, 5);
+        Page<Postagem> page = postagemService.findByPagination(0, 3);
 
         modelMap.addAttribute("page", page);
-        modelMap.addAttribute("urlPagination", "/postagem/page");
+        //modelMap.addAttribute("urlPagination", "/postagem/page");
 
         return new ModelAndView("postagem/list", modelMap);
     }

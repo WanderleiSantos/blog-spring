@@ -122,5 +122,4 @@ public class UsuarioController {
 
         return view;
     }
-
 }
