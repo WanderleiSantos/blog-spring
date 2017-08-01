@@ -113,4 +113,9 @@ public class PostagemService {
     public List<Postagem> findByAutor(String nome) {
         return repository.findByAutorNome(nome);
     }
+
+    public Page<Postagem> findByTitulo(int page, int size, String titulo) {
+        Pageable pageable = new PageRequest(page,size);
+        return repository.findAllByTituloContainingIgnoreCaseOrderByDataPostagemDesc(pageable, titulo);
+    }
 }
