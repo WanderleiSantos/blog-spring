@@ -3,6 +3,28 @@
  */
 $(document).ready(function () {
 
+    $( "#save-ajax" ).submit(function( event ) {
+
+        event.preventDefault();
+
+        $.post( '/blog/postagem/ajax/save', $(this).serialize() )
+            .done(function(postagem) {
+                $('#info').empty().append(
+                    "<p>Postagem salva com sucesso!</p>" +
+                    "<p>Abrir postagem: <a href='/blog/" +
+                    postagem.permalink + "'>" + 	postagem.titulo + "</a></p>"
+                );
+
+                $('#save-ajax').each(function() {
+                    this.reset();
+                });
+            })
+            .fail(function( error ) {
+                $('#info').empty().append("<p>Error: status " +
+                    error.status + ", " + error.statusText + "</p>")
+            });
+    });
+
     $(document).on('click', 'button[id*="button_"]', function () {
         var pageNumber = $(this).val();
         tbody(pageNumber);
@@ -50,16 +72,5 @@ function tbody(page) {
             var msg = "Sorry but there was an error: ";
             $("#info").html(msg + xhr.status + " " + xhr.statusText);
         }
-
-        if (status = "success") {
-            $('button').each(function () {
-                var id = '#' + $(this).attr('id');
-                if ($(id).attr('disabled') == 'disabled') {
-                    $(id).removeAttr('disabled');
-                }
-            });
-            $('#button_' + page).attr('disabled', 'disabled');
-        }
-
     });
 }

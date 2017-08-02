@@ -90,4 +90,17 @@ public class PostagemController {
         view.addObject("page", page);
         return view;
     }
+
+    @RequestMapping(value = "/ajax/add", method = RequestMethod.GET)
+    public ModelAndView cadastroAjax(){
+        ModelAndView view = new ModelAndView("postagem/cadastro-ajax");
+        view.addObject("categorias", categoriaService.findAll());
+        return view;
+    }
+
+    @RequestMapping(value = "/ajax/save", method = RequestMethod.POST)
+    public @ResponseBody Postagem saveAjax(Postagem postagem){
+        postagemService.saveOrUpdate(postagem);
+        return postagem;
+    }
 }

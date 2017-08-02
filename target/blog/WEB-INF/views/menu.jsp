@@ -17,6 +17,7 @@
     <nav>
         <a href="<c:url value="/postagem/add"/>">Add Postagem</a>
         <a href="<c:url value="/postagem/list"/>">Listar Postagens</a>
+        <a href="<c:url value="/postagem/ajax/add"/>">Add Postagem AJAX</a>
     </nav>
 
     <nav>
