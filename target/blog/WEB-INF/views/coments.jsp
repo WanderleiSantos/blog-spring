@@ -12,7 +12,8 @@
         <input type="hidden" value="${postagem.permalink}" name="permalink">
         <div>
             <form:label path="texto">Digite seu Comentário</form:label><br>
-            <form:textarea path="texto" rows="5" cols="70" required="true"/>
+            <form:textarea path="texto" rows="5" cols="70" />
+            <form:errors path="texto" cssClass="error"/>
         </div>
         <br>
         <div>

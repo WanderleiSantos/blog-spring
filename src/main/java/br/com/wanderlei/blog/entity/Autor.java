@@ -1,5 +1,7 @@
 package br.com.wanderlei.blog.entity;
 
+import org.hibernate.validator.constraints.Length;
+import org.hibernate.validator.constraints.NotBlank;
 import org.springframework.data.jpa.domain.AbstractPersistable;
 
 import javax.persistence.*;
@@ -12,9 +14,13 @@ import java.util.List;
 @Table(name = "autores")
 public class Autor extends AbstractPersistable<Long> {
 
+    @NotBlank
+    @Length(min = 3, max = 50)
     @Column(nullable = false, unique = true, length = 50)
     private String nome;
 
+    @NotBlank(message = "Preencha a Biografia")
+    @Length(min = 5, max = 255, message = "Minimo 5 e Maximo 255 Caracteres")
     @Column(nullable = false, length = 255)
     private String biografia;
 

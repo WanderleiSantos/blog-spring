@@ -16,6 +16,7 @@
                 <div class="campo">
                     <form:label path="descricao">Descrição</form:label><br>
                     <form:input path="descricao" type="text" requerid="true"/>
+                    <form:errors path="descricao" cssClass="error"/>
                 </div>
                 <div>
                     <input type="submit" value="Salvar">

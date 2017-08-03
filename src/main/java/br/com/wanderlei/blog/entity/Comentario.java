@@ -1,5 +1,7 @@
 package br.com.wanderlei.blog.entity;
 
+import org.hibernate.validator.constraints.Length;
+import org.hibernate.validator.constraints.NotBlank;
 import org.springframework.data.jpa.domain.AbstractPersistable;
 
 import javax.persistence.*;
@@ -12,6 +14,8 @@ import java.util.Date;
 @Table(name = "comentarios")
 public class Comentario  extends AbstractPersistable<Long> implements Comparable<Comentario>{
 
+    @NotBlank
+    @Length(min = 3, max = 300)
     @Column(nullable = false, columnDefinition = "TEXT")
     private String texto;
 

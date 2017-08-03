@@ -1,5 +1,7 @@
 package br.com.wanderlei.blog.entity;
 
+import org.hibernate.validator.constraints.Length;
+import org.hibernate.validator.constraints.NotBlank;
 import org.springframework.data.jpa.domain.AbstractPersistable;
 
 import javax.persistence.*;
@@ -12,6 +14,8 @@ import java.util.List;
 @Table(name = "categorias")
 public class Categoria extends AbstractPersistable<Long> {
 
+    @NotBlank
+    @Length(min = 3, max = 30)
     @Column(nullable = false, unique = true, length = 30)
     private String descricao;
 

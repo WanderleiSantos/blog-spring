@@ -5,6 +5,7 @@ import com.fasterxml.jackson.datatype.hibernate4.Hibernate4Module;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
+import org.springframework.http.converter.ByteArrayHttpMessageConverter;
 import org.springframework.http.converter.HttpMessageConverter;
 import org.springframework.http.converter.json.Jackson2ObjectMapperBuilder;
 import org.springframework.http.converter.json.MappingJackson2HttpMessageConverter;
@@ -61,7 +62,7 @@ public class SpringMvcConfig extends WebMvcConfigurerAdapter{
                 new MappingJackson2HttpMessageConverter(builder.build());
 
         converter.setObjectMapper(objectMapper);
-
+        converters.add(new ByteArrayHttpMessageConverter());
         converters.add(converter);
     }
 }
