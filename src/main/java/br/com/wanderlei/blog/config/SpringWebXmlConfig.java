@@ -1,7 +1,9 @@
 package br.com.wanderlei.blog.config;
 
 import org.springframework.cglib.proxy.Dispatcher;
+import org.springframework.orm.jpa.support.OpenEntityManagerInViewFilter;
 import org.springframework.web.WebApplicationInitializer;
+import org.springframework.web.context.ContextLoaderListener;
 import org.springframework.web.context.support.AnnotationConfigWebApplicationContext;
 import org.springframework.web.filter.CharacterEncodingFilter;
 import org.springframework.web.servlet.DispatcherServlet;
@@ -18,6 +20,9 @@ public class SpringWebXmlConfig implements WebApplicationInitializer {
 
     public void onStartup(ServletContext servletContext) throws ServletException {
         AnnotationConfigWebApplicationContext webApplicationContext = new AnnotationConfigWebApplicationContext();
+
+        servletContext.addListener(new ContextLoaderListener(webApplicationContext));
+
         webApplicationContext.register(SpringMvcConfig.class);
         webApplicationContext.setServletContext(servletContext);
 
@@ -33,5 +38,10 @@ public class SpringWebXmlConfig implements WebApplicationInitializer {
         filterRegistration.setInitParameter("encoding", "UTF-8");
         filterRegistration.setInitParameter("forceEncoding", "true");
         filterRegistration.addMappingForUrlPatterns(null, true, "/*");
+
+        FilterRegistration.Dynamic inViewSession =
+                servletContext.addFilter("Spring OpenEntityManagerInViewFilter", new OpenEntityManagerInViewFilter());
+        inViewSession.setAsyncSupported(Boolean.TRUE);
+        inViewSession.addMappingForUrlPatterns(null, true, "/*");
     }
 }

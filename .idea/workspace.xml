@@ -2,43 +2,20 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="c70eeafc-3d1e-49ee-8014-5189c58d8d2f" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_fasterxml_classmate_1_1_0.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_validation_validation_api_1_1_0_Final.xml" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_hibernate_hibernate_validator_5_2_4_Final.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/br/com/wanderlei/blog/web/controller/ExceptionController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/error.jsp" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/error500.jsp" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/blog.war" afterPath="$PROJECT_DIR$/target/blog.war" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/blog/WEB-INF/classes/br/com/wanderlei/blog/config/SpringMvcConfig.class" afterPath="$PROJECT_DIR$/target/blog/WEB-INF/classes/br/com/wanderlei/blog/config/SpringMvcConfig.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/blog/WEB-INF/classes/br/com/wanderlei/blog/entity/Autor.class" afterPath="$PROJECT_DIR$/target/blog/WEB-INF/classes/br/com/wanderlei/blog/entity/Autor.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/blog/WEB-INF/classes/br/com/wanderlei/blog/entity/Categoria.class" afterPath="$PROJECT_DIR$/target/blog/WEB-INF/classes/br/com/wanderlei/blog/entity/Categoria.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/blog/WEB-INF/classes/br/com/wanderlei/blog/entity/Comentario.class" afterPath="$PROJECT_DIR$/target/blog/WEB-INF/classes/br/com/wanderlei/blog/entity/Comentario.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/blog/WEB-INF/classes/br/com/wanderlei/blog/web/controller/AutorController.class" afterPath="$PROJECT_DIR$/target/blog/WEB-INF/classes/br/com/wanderlei/blog/web/controller/AutorController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/blog/WEB-INF/classes/br/com/wanderlei/blog/web/controller/CategoriaController.class" afterPath="$PROJECT_DIR$/target/blog/WEB-INF/classes/br/com/wanderlei/blog/web/controller/CategoriaController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/blog/WEB-INF/classes/br/com/wanderlei/blog/web/controller/ComentarioController.class" afterPath="$PROJECT_DIR$/target/blog/WEB-INF/classes/br/com/wanderlei/blog/web/controller/ComentarioController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/br/com/wanderlei/blog/config/SpringMvcConfig.class" afterPath="$PROJECT_DIR$/target/classes/br/com/wanderlei/blog/config/SpringMvcConfig.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/br/com/wanderlei/blog/entity/Autor.class" afterPath="$PROJECT_DIR$/target/classes/br/com/wanderlei/blog/entity/Autor.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/br/com/wanderlei/blog/entity/Categoria.class" afterPath="$PROJECT_DIR$/target/classes/br/com/wanderlei/blog/entity/Categoria.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/br/com/wanderlei/blog/entity/Comentario.class" afterPath="$PROJECT_DIR$/target/classes/br/com/wanderlei/blog/entity/Comentario.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/br/com/wanderlei/blog/web/controller/AutorController.class" afterPath="$PROJECT_DIR$/target/classes/br/com/wanderlei/blog/web/controller/AutorController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/br/com/wanderlei/blog/web/controller/CategoriaController.class" afterPath="$PROJECT_DIR$/target/classes/br/com/wanderlei/blog/web/controller/CategoriaController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/br/com/wanderlei/blog/web/controller/ComentarioController.class" afterPath="$PROJECT_DIR$/target/classes/br/com/wanderlei/blog/web/controller/ComentarioController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/blog_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/blog_war_exploded.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/blog/WEB-INF/classes/br/com/wanderlei/blog/entity/Postagem.class" afterPath="$PROJECT_DIR$/target/blog/WEB-INF/classes/br/com/wanderlei/blog/entity/Postagem.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/blog/WEB-INF/classes/br/com/wanderlei/blog/web/controller/HomeController.class" afterPath="$PROJECT_DIR$/target/blog/WEB-INF/classes/br/com/wanderlei/blog/web/controller/HomeController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/br/com/wanderlei/blog/entity/Postagem.class" afterPath="$PROJECT_DIR$/target/classes/br/com/wanderlei/blog/entity/Postagem.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/br/com/wanderlei/blog/web/controller/HomeController.class" afterPath="$PROJECT_DIR$/target/classes/br/com/wanderlei/blog/web/controller/HomeController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/blog.iml" afterPath="$PROJECT_DIR$/blog.iml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/com/wanderlei/blog/config/SpringMvcConfig.java" afterPath="$PROJECT_DIR$/src/main/java/br/com/wanderlei/blog/config/SpringMvcConfig.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/com/wanderlei/blog/entity/Autor.java" afterPath="$PROJECT_DIR$/src/main/java/br/com/wanderlei/blog/entity/Autor.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/com/wanderlei/blog/entity/Categoria.java" afterPath="$PROJECT_DIR$/src/main/java/br/com/wanderlei/blog/entity/Categoria.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/com/wanderlei/blog/entity/Comentario.java" afterPath="$PROJECT_DIR$/src/main/java/br/com/wanderlei/blog/entity/Comentario.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/com/wanderlei/blog/web/controller/AutorController.java" afterPath="$PROJECT_DIR$/src/main/java/br/com/wanderlei/blog/web/controller/AutorController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/com/wanderlei/blog/web/controller/CategoriaController.java" afterPath="$PROJECT_DIR$/src/main/java/br/com/wanderlei/blog/web/controller/CategoriaController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/com/wanderlei/blog/web/controller/ComentarioController.java" afterPath="$PROJECT_DIR$/src/main/java/br/com/wanderlei/blog/web/controller/ComentarioController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/static/css/style.css" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/static/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/autor/cadastro.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/autor/cadastro.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/categoria/cadastro.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/categoria/cadastro.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/coments.jsp" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/coments.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/blog/WEB-INF/static/css/style.css" afterPath="$PROJECT_DIR$/target/blog/WEB-INF/static/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/blog/WEB-INF/views/autor/cadastro.jsp" afterPath="$PROJECT_DIR$/target/blog/WEB-INF/views/autor/cadastro.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/blog/WEB-INF/views/categoria/cadastro.jsp" afterPath="$PROJECT_DIR$/target/blog/WEB-INF/views/categoria/cadastro.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/blog/WEB-INF/views/coments.jsp" afterPath="$PROJECT_DIR$/target/blog/WEB-INF/views/coments.jsp" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/com/wanderlei/blog/config/SpringWebXmlConfig.java" afterPath="$PROJECT_DIR$/src/main/java/br/com/wanderlei/blog/config/SpringWebXmlConfig.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/com/wanderlei/blog/entity/Postagem.java" afterPath="$PROJECT_DIR$/src/main/java/br/com/wanderlei/blog/entity/Postagem.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/br/com/wanderlei/blog/web/controller/HomeController.java" afterPath="$PROJECT_DIR$/src/main/java/br/com/wanderlei/blog/web/controller/HomeController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/blog/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/target/blog/WEB-INF/web.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -68,19 +45,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="Autor.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/br/com/wanderlei/blog/entity/Autor.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="28" column="28" lean-forward="true" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="28" />
-              <folding>
-                <element signature="e#1439#1440#0" expanded="true" />
-                <element signature="e#1471#1472#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file leaf-file-name="application.properties" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/resources/application.properties">
           <provider selected="true" editor-type-id="text-editor">
@@ -91,21 +55,73 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Categoria.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/br/com/wanderlei/blog/entity/Categoria.java">
+      <file leaf-file-name="error.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/error.jsp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="180">
-              <caret line="17" column="29" lean-forward="false" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
+            <state relative-caret-position="240">
+              <caret line="16" column="64" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="CategoriaController.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/br/com/wanderlei/blog/web/controller/CategoriaController.java">
+      <file leaf-file-name="ExceptionController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/br/com/wanderlei/blog/web/controller/ExceptionController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="216">
-              <caret line="44" column="47" lean-forward="true" selection-start-line="44" selection-start-column="47" selection-end-line="44" selection-end-column="47" />
+            <state relative-caret-position="570">
+              <caret line="38" column="0" lean-forward="true" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Postagem.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/br/com/wanderlei/blog/entity/Postagem.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="22">
+              <caret line="33" column="38" lean-forward="false" selection-start-line="33" selection-start-column="38" selection-end-line="33" selection-end-column="38" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="SpringWebXmlConfig.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/br/com/wanderlei/blog/config/SpringWebXmlConfig.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="165">
+              <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="web.xml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="16" column="41" lean-forward="false" selection-start-line="16" selection-start-column="41" selection-end-line="16" selection-end-column="41" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="error500.jsp" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/error500.jsp">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="240">
+              <caret line="16" column="43" lean-forward="false" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="43" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="HomeController.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/br/com/wanderlei/blog/web/controller/HomeController.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="510">
+              <caret line="84" column="64" lean-forward="false" selection-start-line="84" selection-start-column="64" selection-end-line="84" selection-end-column="64" />
               <folding />
             </state>
           </provider>
@@ -114,19 +130,11 @@
       <file leaf-file-name="SpringMvcConfig.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/br/com/wanderlei/blog/config/SpringMvcConfig.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
+            <state relative-caret-position="285">
               <caret line="37" column="28" lean-forward="false" selection-start-line="37" selection-start-column="28" selection-end-line="37" selection-end-column="28" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="coments.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/coments.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="210">
-              <caret line="14" column="59" lean-forward="false" selection-start-line="14" selection-start-column="59" selection-end-line="14" selection-end-column="59" />
-              <folding />
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -134,39 +142,11 @@
       <file leaf-file-name="ComentarioController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/br/com/wanderlei/blog/web/controller/ComentarioController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="77">
-              <caret line="24" column="48" lean-forward="true" selection-start-line="24" selection-start-column="48" selection-end-line="24" selection-end-column="48" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Comentario.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/br/com/wanderlei/blog/entity/Comentario.java">
-          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="180">
-              <caret line="17" column="30" lean-forward="false" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="cadastro.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/categoria/cadastro.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="270">
-              <caret line="18" column="65" lean-forward="false" selection-start-line="18" selection-start-column="65" selection-end-line="18" selection-end-column="65" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="cadastro.jsp" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/autor/cadastro.jsp">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="390">
-              <caret line="26" column="29" lean-forward="false" selection-start-line="26" selection-start-column="29" selection-end-line="26" selection-end-column="29" />
-              <folding />
+              <caret line="24" column="48" lean-forward="false" selection-start-line="24" selection-start-column="48" selection-end-line="24" selection-end-column="48" />
+              <folding>
+                <element signature="imports" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -179,8 +159,8 @@
         <option value="Enum" />
         <option value="CSS File" />
         <option value="Interface" />
-        <option value="Class" />
         <option value="JavaScript File" />
+        <option value="Class" />
         <option value="Jsp File" />
       </list>
     </option>
@@ -201,11 +181,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/src/main/java/br/com/wanderlei/blog/config/SpringDataConfig.java" />
-        <option value="$PROJECT_DIR$/src/main/resources/log4j.properties" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/usuario/cadastro.jsp" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/usuario/atualizar.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/br/com/wanderlei/blog/service/AvatarService.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/wanderlei/blog/web/controller/AvatarController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/avatar/atualizar.jsp" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/usuario/perfil.jsp" />
@@ -228,7 +203,6 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/post.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/wanderlei/blog/service/UsuarioService.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/usuario/list.jsp" />
-        <option value="$PROJECT_DIR$/src/main/java/br/com/wanderlei/blog/web/controller/HomeController.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/wanderlei/blog/web/controller/UsuarioController.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/wanderlei/blog/service/PostagemService.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/wanderlei/blog/repository/PostagemRepository.java" />
@@ -237,7 +211,6 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/menu.jsp" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/wanderlei/blog/web/controller/PostagemController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/static/js/postagem.js" />
-        <option value="$PROJECT_DIR$/src/main/java/br/com/wanderlei/blog/entity/Postagem.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/postagem/cadastro-ajax.jsp" />
         <option value="$PROJECT_DIR$/pom.xml" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/static/css/style.css" />
@@ -251,6 +224,13 @@
         <option value="$PROJECT_DIR$/src/main/java/br/com/wanderlei/blog/entity/Comentario.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/wanderlei/blog/web/controller/ComentarioController.java" />
         <option value="$PROJECT_DIR$/src/main/java/br/com/wanderlei/blog/config/SpringMvcConfig.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/error.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/wanderlei/blog/web/controller/HomeController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/wanderlei/blog/web/controller/ExceptionController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/error500.jsp" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/wanderlei/blog/entity/Postagem.java" />
+        <option value="$PROJECT_DIR$/src/main/java/br/com/wanderlei/blog/config/SpringWebXmlConfig.java" />
         <option value="$PROJECT_DIR$/src/main/resources/application.properties" />
       </list>
     </option>
@@ -276,9 +256,9 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="1365" />
+    <option name="x" value="-1" />
     <option name="width" value="1602" />
-    <option name="height" value="900" />
+    <option name="height" value="873" />
   </component>
   <component name="ProjectInspectionProfilesVisibleTreeState">
     <entry key="Project Default">
@@ -320,7 +300,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
       <pane id="Scope">
         <subPane subId="Project Files">
           <PATH>
@@ -367,7 +346,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -612,74 +590,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="js" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="blog" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="blog" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="WEB-INF" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="static" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="blog" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="blog" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="resources" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -900,6 +810,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="PackagesPane" />
+      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -1451,12 +1363,13 @@
       <workItem from="1501200570105" duration="3250000" />
       <workItem from="1501549939439" duration="2780000" />
       <workItem from="1501634643029" duration="4042000" />
-      <workItem from="1501722305353" duration="3034000" />
+      <workItem from="1501722305353" duration="3580000" />
+      <workItem from="1501806067323" duration="2568000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="101369000" />
+    <option name="totallyTimeSpent" value="104483000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -1468,7 +1381,7 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="1365" y="0" width="1602" height="900" extended-state="6" />
+    <frame x="-1" y="0" width="1602" height="873" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1485,7 +1398,7 @@
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.39893618" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.33376125" sideWeight="0.493565" order="13" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3453145" sideWeight="0.493565" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
@@ -1494,8 +1407,8 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.36071888" sideWeight="0.494852" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32845744" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32978722" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26512226" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.22908624" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
@@ -1540,35 +1453,6 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.3.8.RELEASE/spring-web-4.3.8.RELEASE.jar!/org/springframework/web/method/support/InvocableHandlerMethod.class" />
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/wanderlei/blog/web/editor/PerfilEditorSupport.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="240">
-          <caret line="17" column="40" lean-forward="false" selection-start-line="17" selection-start-column="40" selection-end-line="17" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/_old_index.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-8">
-          <caret line="1" column="6" lean-forward="false" selection-start-line="1" selection-start-column="6" selection-end-line="1" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/usuario/cadastro.jsp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-8">
-          <caret line="15" column="8" lean-forward="false" selection-start-line="14" selection-start-column="3" selection-end-line="15" selection-end-column="8" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/wanderlei/blog/service/ComentarioService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="357">
-          <caret line="24" column="52" lean-forward="true" selection-start-line="24" selection-start-column="52" selection-end-line="24" selection-end-column="52" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/jspl/taglibs.jspf">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="34">
@@ -1725,14 +1609,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/wanderlei/blog/web/controller/HomeController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="165">
-          <caret line="36" column="51" lean-forward="false" selection-start-line="36" selection-start-column="51" selection-end-line="36" selection-end-column="51" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/static/js/jquery-3.2.1.min.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1804,14 +1680,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/wanderlei/blog/entity/Postagem.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1020">
-          <caret line="100" column="9" lean-forward="false" selection-start-line="100" selection-start-column="9" selection-end-line="100" selection-end-column="9" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/postagem/list.jsp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="75">
@@ -1832,9 +1700,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="255">
           <caret line="19" column="19" lean-forward="false" selection-start-line="19" selection-start-column="19" selection-end-line="19" selection-end-column="19" />
-          <folding>
-            <element signature="e#0#44#0" expanded="false" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -1842,7 +1707,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="15">
           <caret line="1" column="18" lean-forward="false" selection-start-line="1" selection-start-column="18" selection-end-line="1" selection-end-column="18" />
-          <folding />
         </state>
       </provider>
     </entry>
@@ -1873,10 +1737,25 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/br/com/wanderlei/blog/entity/Autor.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="345">
-          <caret line="28" column="28" lean-forward="true" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="28" />
+          <caret line="28" column="28" lean-forward="false" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="28" />
           <folding>
-            <element signature="e#1439#1440#0" expanded="true" />
-            <element signature="e#1471#1472#0" expanded="true" />
+            <element signature="imports" expanded="false" />
+            <element signature="e#924#925#0" expanded="false" />
+            <element signature="e#955#956#0" expanded="false" />
+            <element signature="e#986#987#0" expanded="false" />
+            <element signature="e#1013#1014#0" expanded="false" />
+            <element signature="e#1053#1054#0" expanded="false" />
+            <element signature="e#1085#1086#0" expanded="false" />
+            <element signature="e#1121#1122#0" expanded="false" />
+            <element signature="e#1153#1154#0" expanded="false" />
+            <element signature="e#1203#1204#0" expanded="false" />
+            <element signature="e#1245#1246#0" expanded="false" />
+            <element signature="e#1280#1281#0" expanded="false" />
+            <element signature="e#1310#1311#0" expanded="false" />
+            <element signature="e#1357#1358#0" expanded="false" />
+            <element signature="e#1395#1396#0" expanded="false" />
+            <element signature="e#1529#1530#0" expanded="false" />
+            <element signature="e#1571#1572#0" expanded="false" />
           </folding>
         </state>
       </provider>
@@ -1885,7 +1764,23 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="17" column="29" lean-forward="false" selection-start-line="17" selection-start-column="29" selection-end-line="17" selection-end-column="29" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#922#923#0" expanded="false" />
+            <element signature="e#953#954#0" expanded="false" />
+            <element signature="e#989#990#0" expanded="false" />
+            <element signature="e#1021#1022#0" expanded="false" />
+            <element signature="e#1071#1072#0" expanded="false" />
+            <element signature="e#1113#1114#0" expanded="false" />
+            <element signature="e#1149#1150#0" expanded="false" />
+            <element signature="e#1181#1182#0" expanded="false" />
+            <element signature="e#1231#1232#0" expanded="false" />
+            <element signature="e#1273#1274#0" expanded="false" />
+            <element signature="e#1317#1318#0" expanded="false" />
+            <element signature="e#1349#1350#0" expanded="false" />
+            <element signature="e#1407#1408#0" expanded="false" />
+            <element signature="e#1449#1450#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1899,9 +1794,11 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/br/com/wanderlei/blog/web/controller/CategoriaController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="44" column="47" lean-forward="true" selection-start-line="44" selection-start-column="47" selection-end-line="44" selection-end-column="47" />
-          <folding />
+        <state relative-caret-position="480">
+          <caret line="44" column="47" lean-forward="false" selection-start-line="44" selection-start-column="47" selection-end-line="44" selection-end-column="47" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -1917,22 +1814,104 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="180">
           <caret line="17" column="30" lean-forward="false" selection-start-line="17" selection-start-column="30" selection-end-line="17" selection-end-column="30" />
-          <folding />
+          <folding>
+            <element signature="imports" expanded="false" />
+            <element signature="e#835#836#0" expanded="false" />
+            <element signature="e#866#867#0" expanded="false" />
+            <element signature="e#898#899#0" expanded="false" />
+            <element signature="e#926#927#0" expanded="false" />
+            <element signature="e#968#969#0" expanded="false" />
+            <element signature="e#1002#1003#0" expanded="false" />
+            <element signature="e#1041#1042#0" expanded="false" />
+            <element signature="e#1078#1079#0" expanded="false" />
+            <element signature="e#1136#1137#0" expanded="false" />
+            <element signature="e#1188#1189#0" expanded="false" />
+            <element signature="e#1225#1226#0" expanded="false" />
+            <element signature="e#1256#1257#0" expanded="false" />
+            <element signature="e#1306#1307#0" expanded="false" />
+            <element signature="e#1346#1347#0" expanded="false" />
+            <element signature="e#1381#1382#0" expanded="false" />
+            <element signature="e#1411#1412#0" expanded="false" />
+            <element signature="e#1458#1459#0" expanded="false" />
+            <element signature="e#1496#1497#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/br/com/wanderlei/blog/web/controller/ComentarioController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="77">
-          <caret line="24" column="48" lean-forward="true" selection-start-line="24" selection-start-column="48" selection-end-line="24" selection-end-column="48" />
-          <folding />
+        <state relative-caret-position="180">
+          <caret line="24" column="48" lean-forward="false" selection-start-line="24" selection-start-column="48" selection-end-line="24" selection-end-column="48" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/br/com/wanderlei/blog/config/SpringMvcConfig.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
+        <state relative-caret-position="285">
           <caret line="37" column="28" lean-forward="false" selection-start-line="37" selection-start-column="28" selection-end-line="37" selection-end-column="28" />
+          <folding>
+            <element signature="imports" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/wanderlei/blog/web/controller/HomeController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="84" column="64" lean-forward="false" selection-start-line="84" selection-start-column="64" selection-end-line="84" selection-end-column="64" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/wanderlei/blog/web/controller/ExceptionController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="570">
+          <caret line="38" column="0" lean-forward="true" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="41" lean-forward="false" selection-start-line="16" selection-start-column="41" selection-end-line="16" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/error.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="64" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/error500.jsp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="43" lean-forward="false" selection-start-line="16" selection-start-column="43" selection-end-line="16" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/wanderlei/blog/entity/Postagem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="22">
+          <caret line="33" column="38" lean-forward="false" selection-start-line="33" selection-start-column="38" selection-end-line="33" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/br/com/wanderlei/blog/config/SpringWebXmlConfig.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="165">
+          <caret line="22" column="0" lean-forward="true" selection-start-line="22" selection-start-column="0" selection-end-line="22" selection-end-column="0" />
           <folding />
         </state>
       </provider>
