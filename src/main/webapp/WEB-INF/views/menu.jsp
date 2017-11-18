@@ -5,8 +5,15 @@
         <a href="<c:url value="/"/> ">HOME</a>
     </nav>
     <nav>
-        <a href="<c:url value="/usuario/add"/>">Add Usuario</a>
-        <a href="<c:url value="/usuario/list"/>">Listar Usuarios</a>
+
+        <security:authorize access="hasAnyAuthority('ADMIN', 'AUTOR', 'LEITOR')">
+            <a href="<c:url value="/usuario/perfil/${logado.id}"/>">Perfil</a>
+        </security:authorize>
+
+        <security:authorize access="hasAuthority('ADMIN')">
+            <a href="<c:url value="/usuario/list"/>">Listar Usuarios</a>
+        </security:authorize>
+
     </nav>
 
     <nav>
@@ -21,6 +28,26 @@
     </nav>
 
     <nav>
-        <a href="<c:url value="/categoria/add"/>">categorias</a>
+        <security:authorize access="hasAnyAuthority('ADMIN', 'AUTOR')">
+            <a href="<c:url value="/categoria/add"/>">categorias</a>
+        </security:authorize>
     </nav>
+
+    <nav class="login">
+
+        <c:if test="${logado == null}">
+            <a href="<c:url value="/auth/form"/>">LOGIN</a>
+            <a href="<c:url value="/usuario/add"/>">Cadastrar-se</a>
+        </c:if>
+
+        <security:authorize access="hasAnyAuthority('ADMIN', 'AUTOR', 'LEITOR')">
+            <form action="<c:url value="/logout"/>" method="post">
+                <security:csrfInput/>
+                <button type="submit">Sair</button>
+             </form>
+        </security:authorize>
+
+    </nav>
+
+
 </fieldset>
